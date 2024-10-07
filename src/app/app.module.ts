@@ -6,8 +6,6 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AuthModule } from './auth/auth.module';
-import { AuthRoutingModule } from './auth/auth-routing.module';
 import { ToastrModule } from 'ngx-toastr';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -19,8 +17,6 @@ import { HttpErrorInterceptorService } from './interceptors/HttpErrorInterceptor
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AuthModule,
-    AuthRoutingModule,
     ToastrModule.forRoot(),
     BrowserAnimationsModule,
   ],
